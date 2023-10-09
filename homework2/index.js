@@ -13,4 +13,4 @@ resultSum = firstNum + secondNum;
 resultDiff = firstNum - secondNum;
 resultMult = firstNum * secondNum;
 resultDiv = firstNum / secondNum;
-alert('Calculations are finished! \nSum: ' + firstNum + ' + ' + secondNum + ' = ' + resultSum + '\nDiff: ' + firstNum + ' - ' + secondNum + ' = ' + resultDiff + '\nMult: ' + firstNum + ' * ' + secondNum + ' = ' + resultMult + '\nDiv: '+ firstNum + ' / ' + secondNum + ' = ' + resultDiv);
+alert(`Calculations are finished! \nSum: + ${firstNum} + ${secondNum} = ${resultSum} \nDiff: ${firstNum} - ${secondNum} = ${resultDiff} \nMult: ${firstNum} * ${secondNum} = ${resultMult} \nDiv: ${firstNum} / ${secondNum} = ${resultDiv}`);

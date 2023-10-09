@@ -1,0 +1,221 @@
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro
+$ git push
+fatal: not a git repository (or any of the parent directories): .git
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro
+$ git add /d/Hillel/frontend-pro
+fatal: not a git repository (or any of the parent directories): .git
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro
+$ echo "# frontend-pro" >> README.md
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro
+$ git init
+Initialized empty Git repository in D:/Hillel/frontend-pro/.git/
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: adding embedded git repository: frontend-pro-02.10.2023
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint:   git submodule add <url> frontend-pro-02.10.2023
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint:   git rm --cached frontend-pro-02.10.2023
+hint: 
+hint: See "git help submodule" for more information.
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git add .
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git push https://github.com/Julianna95/frontend-pro
+Everything up-to-date
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git add .
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git add .
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.      
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   homework2/index.html
+        new file:   homework2/index.js  
+        new file:   homework3/index.html
+        new file:   homework3/index.js  
+
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$
+ *  History restored 
+
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ touch .gitignore
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   homework2/index.html
+        new file:   homework2/index.js
+        new file:   homework3/index.html
+        new file:   homework3/index.js
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    frontend-pro-02.10.2023
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git add .
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git commit -m "next_commit"
+[main be3d008] next_commit
+ 6 files changed, 51 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ delete mode 160000 frontend-pro-02.10.2023      
+ create mode 100644 homework2/index.html
+ create mode 100644 homework2/index.js
+ create mode 100644 homework3/index.html
+ create mode 100644 homework3/index.js
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git push origin main
+To https://github.com/Julianna95/frontend-pro.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Julianna95/frontend-pro.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git push -f origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (11/11), 1.34 KiB | 686.00 KiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Julianna95/frontend-pro.git
+ + 943c7b9...be3d008 main -> main (forced update)
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git clone https://github.com/iKooot/frontend-pro-02.10.2023.git
+Cloning into 'frontend-pro-02.10.2023'...
+remote: Enumerating objects: 68, done.
+remote: Counting objects: 100% (68/68), done.
+remote: Compressing objects: 100% (56/56), done.
+Receiving objects:  80% (55/68)used 53 (delta 6), pack-reused 0
+Receiving objects: 100% (68/68), 685.48 KiB | 2.18 MiB/s, done.
+Resolving deltas: 100% (11/11), done.
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git push -f origin main
+Everything up-to-date
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git commit --amend -m "fixed repo"
+[main 8dac50a] fixed repo
+ Date: Fri Oct 6 22:56:23 2023 +0300
+ 6 files changed, 51 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ delete mode 160000 frontend-pro-02.10.2023
+ create mode 100644 homework2/index.html
+ create mode 100644 homework2/index.js
+ create mode 100644 homework3/index.html
+ create mode 100644 homework3/index.js
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git push -f  origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.07 KiB | 1.07 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Julianna95/frontend-pro.git
+ + be3d008...8dac50a main -> main (forced update)
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git add .
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git commit -m "fixed-homework1" 
+[main 23babc2] fixed-homework1
+ 3 files changed, 18 insertions(+), 1 deletion(-)
+ create mode 100644 fixed-homework1/index.html
+ create mode 100644 fixed-homework1/index.js
+ delete mode 160000 homework1
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 672 bytes | 672.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Julianna95/frontend-pro.git
+   8dac50a..23babc2  main -> main
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git add .
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git commit -m " added new folder homework4"
+[main 3e41df0]  added new folder homework4
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename {fixed-homework1 => homework1}/index.html (100%)
+ rename {fixed-homework1 => homework1}/index.js (100%)
+
+Xiaomi@DESKTOP-L062FTK MINGW64 /d/Hillel/frontend-pro (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 235 bytes | 235.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Julianna95/frontend-pro.git
+   23babc2..3e41df0  main -> main
