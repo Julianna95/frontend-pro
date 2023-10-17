@@ -9,8 +9,8 @@ if (!action) {
 } else if (action === 'add' || action === 'diff' || action === 'mult' || action === 'div') {
     const firstNum = Number(prompt('Enter first number'));
     const secondNum = Number(prompt('Enter second number'));
-    if (isNaN(firstNum) || isNaN(secondNum)) {
-        alert('This is bad digit, goodbye');
+    if (isNaN(firstNum) || isNaN(secondNum) || firstNum === 0 || secondNum === 0 || firstNum === null  || secondNum === null) {
+        alert('Invalid number. Please enter valid numbers');
     } else if (action === 'add') {
         let actionAdd;
         actionAdd = firstNum + secondNum;
@@ -34,8 +34,8 @@ if (!action) {
     }
 } else if (action === 'sqrt' || action === 'sin' || action === 'cos') {
     const singleNum = Number(prompt('Enter a number'));
-    if (isNaN(singleNum)) {
-        alert('This is bad digit, goodbye');
+    if (isNaN(singleNum || singleNum === 0)) {
+        alert('Invalid number. Please enter valid numbers');
     } else {
         if (action === 'sqrt') {
             let actionSqrt;
@@ -44,12 +44,12 @@ if (!action) {
             alert('Goodbye, see you later.');
         } else if (action === 'sin') {
             let actionSin;
-            actionSin = Math.sqrt(singleNum);
+            actionSin = Math.sin((singleNum * Math.PI) / 180);
             alert(`Sinus of ${singleNum} is ${actionSin}`);
             alert('Goodbye, see you later.');
         } else if (action === 'cos') {
             let actionCos;
-            actionCos = Math.sqrt(singleNum);
+            actionCos = Math.cos((singleNum * Math.PI) / 180);
             alert(`Cosinus of ${singleNum} is ${actionCos}`);
             alert('Goodbye, see you later.');
         } else {
