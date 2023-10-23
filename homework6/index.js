@@ -5,6 +5,11 @@ alert('Welcome to calculator!');
 const action = prompt('What action would you want to do? Enter: Add, Diff, Mult, Div, Sqrt, Sin, or Cos').toLowerCase();
 
 switch (action) {
+    case (!action):
+        alert('Goodbye, see you later!');
+        break;
+
+
     case 'add':
     case 'diff':
     case 'mult':
