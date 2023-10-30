@@ -5,7 +5,7 @@ do {
     let action;
 
     do {
-        action = prompt('What action would you want to do? Enter: Add, Diff, Mult, Div, Sqrt, or Exp');
+        action = window.prompt('What action would you want to do? Enter: Add, Diff, Mult, Div, Sqrt, or Exp');
         if (action === null) {
             alert('Goodbye, see you later.');
             break;
@@ -27,7 +27,7 @@ do {
         let singleNum;
 
         do {
-            singleNum = Number(prompt('Enter a number'));
+            singleNum = Number(window.prompt('Enter a number'));
             if (singleNum === null || isNaN(singleNum)) {
                 alert('This is a bad digit. Please enter a correct number.');
             }
@@ -44,14 +44,14 @@ do {
         let secondNum;
 
         do {
-            firstNum = Number(prompt('Enter the first number'));
+            firstNum = Number(window.prompt('Enter the first number'));
             if (firstNum === null || isNaN(firstNum)) {
                 alert('This is a bad digit. Please enter a correct number.');
             }
         } while (firstNum === null || isNaN(firstNum));
 
         do {
-            secondNum = Number(prompt('Enter the second number'));
+            secondNum = Number(window.prompt('Enter the second number'));
             if (secondNum === null || isNaN(secondNum)) {
                 alert('This is a bad digit. Please enter a correct number.');
             }
