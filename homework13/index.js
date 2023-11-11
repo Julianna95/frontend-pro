@@ -1,6 +1,6 @@
 'use strict'
 
-function createSumFunction() {
+function createLockingSum() {
   let total = 0; 
 
   return function (value) {
@@ -9,7 +9,7 @@ function createSumFunction() {
   };
 }
 
-const sum = createSumFunction();
+const sum = createLockingSum();
 
 console.log(sum(3));   
 console.log(sum(5));   
